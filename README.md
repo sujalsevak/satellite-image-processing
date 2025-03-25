@@ -1,7 +1,5 @@
 # satellite-image-processing
 
-# Satellite Image Processing
-
 This project uses Python libraries such as **NumPy**, **Pandas**, and **Matplotlib** to process and analyze satellite images. It provides functionality for working with image data, performing calculations, and visualizing results with graphs and images.
 
 ## Features
