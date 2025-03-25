@@ -21,3 +21,9 @@ To get started, you'll need to install the required Python libraries. Use the fo
 
 ```bash
 pip install -r requirements.txt
+
+##requirements.txt
+The requirements.txt file includes all the necessary dependencies, which are:
+numpy
+pandas
+matplotlib
