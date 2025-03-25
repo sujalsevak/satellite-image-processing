@@ -31,7 +31,8 @@ plt.title('NDVI Heatmap')
 plt.xlabel('Pixel X')
 plt.ylabel('Pixel Y')
 plt.savefig('ndvi_heatmap.png')
-plt.show()
+plt.show() # This will display the image
+
 # 2. Histogram of NDVI values
 plt.figure(figsize=(8, 6))
 plt.hist(ndvi_image.flatten(), bins=50, color='green', edgecolor='black')
@@ -69,5 +70,5 @@ plt.imshow(ndvi_image, cmap='YlGn', interpolation='nearest')
 plt.colorbar(label='NDVI Value')
 plt.title('Processed NDVI Image')
 plt.savefig('processed_ndvi_image.png')
-plt.show()  # This will display the image
-plt.close()  # Now you can safely close the plot after showing it
+plt.show()  
+plt.close()  
