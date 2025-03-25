@@ -69,4 +69,5 @@ plt.imshow(ndvi_image, cmap='YlGn', interpolation='nearest')
 plt.colorbar(label='NDVI Value')
 plt.title('Processed NDVI Image')
 plt.savefig('processed_ndvi_image.png')
-plt.close()
+plt.show()  # This will display the image
+plt.close()  # Now you can safely close the plot after showing it
