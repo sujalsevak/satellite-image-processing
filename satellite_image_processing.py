@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 
-# Step 1: Simulating satellite image data (Red and Infrared bands)
-# For the sake of this example, we create synthetic data for Red and Infrared bands.
-# Normally, you would load actual satellite data using libraries like rasterio or geopandas.
+#Below code is for mini project of satellite-image-processing
 
+# Step 1: Simulating satellite image data (Red and Infrared bands)
+# Normally, you would load actual satellite data using libraries like rasterio or geopandas.
 # Simulating a 100x100 image
 image_height, image_width = 100, 100
 
@@ -22,7 +22,6 @@ def calculate_ndvi(red, infrared):
 ndvi_image = calculate_ndvi(red_band, infrared_band)
 
 # Step 3: Generate Visualizations
-
 # 1. NDVI Heatmap
 plt.figure(figsize=(8, 6))
 plt.imshow(ndvi_image, cmap='YlGn', interpolation='nearest')
@@ -33,7 +32,7 @@ plt.ylabel('Pixel Y')
 plt.savefig('ndvi_heatmap.png')
 plt.show()
 
-# 2. Histogram of NDVI values
+# Histogram of NDVI values showing in picture is showing in output
 plt.figure(figsize=(8, 6))
 plt.hist(ndvi_image.flatten(), bins=50, color='green', edgecolor='black')
 plt.title('Histogram of NDVI Values')
@@ -65,7 +64,6 @@ plt.xticks(rotation=45)
 plt.savefig('ndvi_timeseries.png')
 plt.show()
 
-# Step 4: Save Processed Image
 # Save the processed NDVI image (as a PNG)
 plt.figure(figsize=(8, 6))
 plt.imshow(ndvi_image, cmap='YlGn', interpolation='nearest')
